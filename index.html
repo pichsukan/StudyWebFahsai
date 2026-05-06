@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyWeb - Full Version</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="homepage" class="page">
+        <div class="infocard"></div>
+        <button class="addtask1button" onclick="showPage('addtaskpage')"></button>
+        
+        <div id="task-container"></div>
+    </div>
+
+    <div id="addtaskpage" class="page" style="display:none;">
+        <div class="addtaskcardlayout"></div>
+        
+        <div class="selectsubjectbox"></div>
+        <div id="subject-display" class="subject-text">Subject</div>
+        <button class="selectsubjecticon" onclick="showPopup()"></button>
+
+        <div class="worknamebox"></div>
+        <input type="text" id="work-input" class="work-input" placeholder="Work">
+
+        <div class="duedatebox"></div>
+        <input type="text" id="date-input" class="date-input" placeholder="DD / MM / YYYY">
+
+        <button class="addtask2button" onclick="saveTask()"></button>
+    </div>
+
+    <div id="subjectpopup" class="popup-overlay" style="display:none;">
+        <div class="selectsubjectcardlayout"></div>
+        <button class="backbotton" onclick="hidePopup()"></button>
+        
+        <button class="sub-btn Math1" onclick="selectSubject('Math 1')"></button>
+        <button class="sub-btn Math2" onclick="selectSubject('Math 2')"></button>
+        <button class="sub-btn Bio" onclick="selectSubject('Biology')"></button>
+        <button class="sub-btn Chem" onclick="selectSubject('Chemical')"></button>
+        <button class="sub-btn Phy1" onclick="selectSubject('Physic 1')"></button>
+        <button class="sub-btn Phy2" onclick="selectSubject('Physic 2')"></button>
+        <button class="sub-btn Art1" onclick="selectSubject('Art 1')"></button>
+        <button class="sub-btn Art2" onclick="selectSubject('Art 2')"></button>
+        <button class="sub-btn eng1" onclick="selectSubject('English 1')"></button>
+        <button class="sub-btn eng2" onclick="selectSubject('Eng 2')"></button>
+        <button class="sub-btn parichat" onclick="selectSubject('แนะแนว')"></button>
+        <button class="sub-btn PE" onclick="selectSubject('PE')"></button>
+        <button class="sub-btn Com" onclick="selectSubject('Computer')"></button>
+        <button class="sub-btn Thai" onclick="selectSubject('Thai')"></button>
+        <button class="sub-btn Ju" onclick="selectSubject('SS')"></button>
+        <button class="sub-btn plus1" onclick="selectSubject('เพิ่มเติม(1)')"></button>
+        <button class="sub-btn plus2" onclick="selectSubject('เพิ่มเติม(2)')"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

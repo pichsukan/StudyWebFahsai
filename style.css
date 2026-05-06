@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+body {
+    width: 1600px;
+    height: 2560px;
+    background: #FFFFFF;
+}
+
+.page {
+    position: absolute;
+    width: 1600px;
+    height: 2560px;
+    top: 0;
+    left: 0;
+}
+
+/* ---------------- แก้ไขเฉพาะช่องพิมพ์ Work ตรงนี้ ---------------- */
+.work-input {
+    position: absolute;
+    width: 775px;
+    height: 115px;
+    left: 533px;
+    top: 471px;
+    font-size: 32px;
+    color: #000000;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 55px; /* <-- เพิ่มบรรทัดนี้ เพื่อดันข้อความให้ลอยขึ้นไปด้านบน ไม่จมตรงกลาง */
+    padding-left: 10px;
+}
+
+/* ส่วนช่องวันที่เหมือนเดิม */
+.date-input {
+    position: absolute;
+    width: 469px;
+    height: 79px;
+    left: 516px;
+    top: 654px;
+    font-size: 32px;
+    color: #000000;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+/* ---------------- TASK CARDS (หน้า Homepage คงเดิม) ---------------- */
+.taskcard-item { position: absolute; width: 592px; height: 272px; }
+.taskcardlayout { position: absolute; width: 550px; height: 240px; left: 0; top: 32px; background: url('studyweb/taskcard/taskcardlayout.png') no-repeat; }
+.deletetaskbutton { position: absolute; width: 114px; height: 114px; right: -20px; top: 0; background: url('studyweb/taskcard/deletetaskbutton.png') no-repeat; border: none; cursor: pointer; }
+
+.task-subject, .task-work, .task-date { position: absolute; color: #000; display: flex; align-items: center; }
+.task-subject { width: 240px; height: 50px; left: 216px; top: 57px; font-size: 30px; }
+.task-work { width: 240px; height: 75px; left: 254px; top: 114px; font-size: 30px; }
+.task-date { width: 240px; height: 50px; left: 254px; top: 189px; font-size: 30px; }
+
+.slot-1 { left: 208px; top: 882px; } .slot-2 { left: 852px; top: 882px; }
+.slot-3 { left: 208px; top: 1196px; } .slot-4 { left: 852px; top: 1196px; }
+.slot-5 { left: 208px; top: 1510px; } .slot-6 { left: 852px; top: 1510px; }
+.slot-7 { left: 208px; top: 1824px; } .slot-8 { left: 852px; top: 1824px; }
+.slot-9 { left: 208px; top: 2138px; } .slot-10 { left: 852px; top: 2138px; }
+
+/* ---------------- ส่วนประกอบอื่นๆ อิงพิกัดเดิมเป๊ะๆ ---------------- */
+.infocard { position: absolute; width: 1238px; height: 659px; left: 160px; top: 159px; background: url('studyweb/infocard.png'); }
+.addtask1button { position: absolute; width: 115px; height: 115px; left: 1329px; top: 725px; background: url('studyweb/addtask(1)button.png'); border-radius: 100px; border: none; cursor: pointer; }
+.addtaskcardlayout { position: absolute; width: 1241px; height: 658px; left: 159px; top: 159px; background: url('studyweb/addtaskcard/addtaskcardlayout.png'); }
+.selectsubjectbox { position: absolute; width: 480px; height: 90px; left: 471px; top: 320px; background: url('studyweb/addtaskcard/selectsubjectbox.png'); }
+.subject-text { position: absolute; width: 337px; height: 80px; left: 504px; top: 324px; font-size: 32px; display: flex; align-items: center; color: #000; }
+.selectsubjecticon { position: absolute; width: 80px; height: 80px; left: 867px; top: 324px; background: url('studyweb/addtaskcard/selectsubjecticon.png'); border: none; cursor: pointer; }
+.worknamebox { position: absolute; width: 818px; height: 159px; left: 510px; top: 450px; background: url('studyweb/addtaskcard/worknamebox.png'); }
+.duedatebox { position: absolute; width: 480px; height: 90px; left: 510px; top: 648px; background: url('studyweb/addtaskcard/duedatebox.png'); }
+.addtask2button { position: absolute; width: 109px; height: 109px; left: 1331px; top: 726px; background: url('studyweb/addtaskcard/addtask(2)button.png'); border-radius: 100px; border: none; cursor: pointer; }
+.popup-overlay { position: fixed; background: rgba(0,0,0,0.5); z-index: 100; }
+.selectsubjectcardlayout { position: absolute; width: 1241px; height: 658px; left: 179px; top: 889px; background: url('studyweb/addtaskcard/selectsubjectcard/selectsubjectcardlayout.png'); }
+.backbotton { position: absolute; width: 330px; height: 70px; left: 1016px; top: 1449px; background: url('studyweb/addtaskcard/selectsubjectcard/backbotton.png'); border: none; cursor: pointer; }
+
+/* ปุ่มวิชา */
+.sub-btn { position: absolute; width: 330px; height: 69px; border: none; cursor: pointer; background-color: transparent; }
+.Math1 { left: 301px; top: 1047px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Math1.png'); }
+.Math2 { left: 301px; top: 1128px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Math2.png'); }
+.Bio   { left: 301px; top: 1208px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Bio.png'); }
+.Chem  { left: 301px; top: 1288px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Chem.png'); }
+.Phy1  { left: 301px; top: 1369px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Phy1.png'); }
+.Phy2  { left: 301px; top: 1449px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Phy2.png'); height: 70px; }
+.Art1  { left: 658px; top: 1047px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Art1.png'); }
+.Art2  { left: 658px; top: 1128px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Art2.png'); }
+.eng1  { left: 658px; top: 1208px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/eng1.png'); }
+.eng2  { left: 658px; top: 1288px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/eng2.png'); }
+.parichat { left: 658px; top: 1369px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/parichat.png'); }
+.PE    { left: 658px; top: 1449px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/PE.png'); height: 70px; }
+.Com   { left: 1016px; top: 1047px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Com.png'); }
+.Thai  { left: 1016px; top: 1128px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Thai.png'); }
+.Ju    { left: 1016px; top: 1208px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/Ju.png'); }
+.plus1 { left: 1016px; top: 1288px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/1.png'); }
+.plus2 { left: 1016px; top: 1369px; background: url('studyweb/addtaskcard/selectsubjectcard/Subject/2.png'); }
+
+/* ---------------- เอฟเฟกต์ปุ่มเด้ง ---------------- */
+button {
+    transition: transform 0.1s ease-in-out; /* ทำให้การเด้งดูสมูท */
+}
+
+button:active {
+    transform: scale(0.90); /* เวลากดค้างไว้ ปุ่มจะหดลง 10% พอปล่อยจะเด้งกลับ */
+}
